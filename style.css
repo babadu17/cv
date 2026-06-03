@@ -27,6 +27,9 @@ body {
 
 header {
     margin-bottom: 40px;
+    margin-left: -80px;    /* annule le padding du body */
+    margin-right: -80px;   /* annule le padding du body */
+    padding: 0 80px;       /* remet un padding interne */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -283,12 +286,17 @@ span {
 /* Footer */
 footer {
     margin-top: 150px;
+    margin-left: -80px;    /* annule le padding du body */
+    margin-right: -80px;   /* annule le padding du body */
+    padding: 0 80px;       /* remet un padding interne */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 15px;
     font-family: var(--text-font);
     color: var(--text-color);
     border-top: 1px solid var(--vert-border);
     height: 60px;
+    line-height: 2;
 }
