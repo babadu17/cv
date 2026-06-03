@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding: 20px 80px;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 header {
@@ -252,12 +253,16 @@ span {
     border: 1px solid var(--vert-border);
     border-radius: 8px;
     background-color: var(--background-cards);
+    overflow: hidden;    /* empêche les enfants de dépasser */
+    padding: 0 0 20px 0;
 }
 
 .containeur-contact {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;     /* passe à la ligne si pas assez de place */
     gap: 20px;
+    padding: 0 20px;
 }
 
 .contact {
@@ -266,10 +271,14 @@ span {
     border-radius: 8px;
     background-color: var(--background-cards);
     color: var(--text-light);
-    height: auto;
-    width: auto;
-    margin: 30px 60px 25px 70px;
+    flex: 1;
+    min-width: 200px;    /* en dessous de 200px elles passent à la ligne */
+    padding: 20px;
+    margin: 0;
     transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact:hover {
@@ -281,6 +290,14 @@ span {
     font-size: 20px;
     font-family: var(--text-font);
     text-align: center;
+}
+
+.contact p {
+    font-family: var(--text-font);
+    white-space: nowrap;
+    margin: 0;
+    overflow: hidden;       /* coupe si vraiment trop long */
+    text-overflow: ellipsis; /* affiche "..." si le texte est coupé */
 }
 
 /* Footer */
