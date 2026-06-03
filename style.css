@@ -2,9 +2,9 @@
     --vert: #7aab8f;
     --vert-border: rgba(122, 171, 143, 0.2);
     --vert-dim: rgba(122, 171, 143, 0.08);
-    --background-color: #080c10;
-    --background-cards: #0f1520;
-    --background-hover: #111d17;
+    --background-color: #0a1410;        /* fond principal vert très sombre */
+    --background-cards: #0f1e17;        /* cartes légèrement plus claires */
+    --background-hover: #162b1f;        /* survol */
     --text-color: rgb(103, 125, 152);
     --text-light: #e2eaf4;
     --text-dim: #6b82a0;
@@ -196,7 +196,7 @@ span {
 
 /* Terminal */
 .terminal {
-    background: #0a0f18;
+    background: #080f0b;
     border: 1px solid var(--vert-border);
     border-radius: 10px;
     overflow: hidden;
