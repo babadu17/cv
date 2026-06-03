@@ -148,6 +148,8 @@ span {
   font-size: 12px;
   color: #e2eaf4;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Le niveau ex: "débutant" */
@@ -158,11 +160,6 @@ span {
 }
 
 .connaissances p {
-    margin: 0;
-    padding: 0;
-}
-
-.connaissances h3 {
     margin: 0;
     padding: 0;
 }
