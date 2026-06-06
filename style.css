@@ -198,6 +198,11 @@ span {
     margin: 0 16px 16px 16px;
 }
 
+a:has(.projets) {
+    text-decoration: none;
+    color: inherit;
+    diplay: block;
+}
 /* Terminal */
 .terminal {
     background: #080f0b;
